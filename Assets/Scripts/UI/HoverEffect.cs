@@ -35,7 +35,8 @@ public class HoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        buttonText.color = hoverColor; 
+        buttonText.color = normalColor;
+        transform.localScale = originalScale;
         AudioManager.Instance.PlayClick();
     }
 }
