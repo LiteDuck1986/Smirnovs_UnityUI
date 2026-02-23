@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 00cd9cdacd660bb4bbade8533552fd58
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7753668960813143187
+    second: TheIndieStoneLogo_Lineart_White_0
+  - first:
+      213: -8105133323466434472
+    second: TheIndieStoneLogo_Lineart_White_1
+  - first:
+      213: -1308111266059405976
+    second: TheIndieStoneLogo_Lineart_White_2
+  - first:
+      213: 2628798961921774229
+    second: TheIndieStoneLogo_Lineart_White_3
+  - first:
+      213: -4077023306546705144
+    second: TheIndieStoneLogo_Lineart_White_4
+  - first:
+      213: 4238598822398177915
+    second: TheIndieStoneLogo_Lineart_White_5
+  - first:
+      213: 6077561360130896380
+    second: TheIndieStoneLogo_Lineart_White_6
+  - first:
+      213: -3875847852658379064
+    second: TheIndieStoneLogo_Lineart_White_7
+  - first:
+      213: -3471613840984366763
+    second: TheIndieStoneLogo_Lineart_White_8
+  - first:
+      213: -8379911898898895650
+    second: TheIndieStoneLogo_Lineart_White_9
+  - first:
+      213: -9210048473199132246
+    second: TheIndieStoneLogo_Lineart_White_10
+  - first:
+      213: -5746508671428653203
+    second: TheIndieStoneLogo_Lineart_White_11
+  - first:
+      213: -3434376996546920547
+    second: TheIndieStoneLogo_Lineart_White_12
+  - first:
+      213: 5143916841432619728
+    second: TheIndieStoneLogo_Lineart_White_13
+  - first:
+      213: -2384705897388853789
+    second: TheIndieStoneLogo_Lineart_White_14
+  - first:
+      213: -1710249052116450556
+    second: TheIndieStoneLogo_Lineart_White_15
+  - first:
+      213: 9042960209472476010
+    second: TheIndieStoneLogo_Lineart_White_16
+  - first:
+      213: -7110003800778592821
+    second: TheIndieStoneLogo_Lineart_White_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 141
+        width: 369
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ba2cc292f656490800000000000000
+      internalID: -7753668960813143187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_1
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 418
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8581a956f28c48f80800000000000000
+      internalID: -8105133323466434472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_2
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 282
+        width: 76
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865b7d3fbb7a8dde0800000000000000
+      internalID: -1308111266059405976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 123
+        width: 36
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59253475abe5b7420800000000000000
+      internalID: 2628798961921774229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 125
+        width: 27
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d8b4857e08b67c0800000000000000
+      internalID: -4077023306546705144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 121
+        width: 29
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72be620c2782da30800000000000000
+      internalID: 4238598822398177915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 7
+        width: 44
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1fd335bd5d75450800000000000000
+      internalID: 6077561360130896380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 105
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c636d2c9e8363ac0800000000000000
+      internalID: -3875847852658379064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 10
+        width: 13
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5512cc2ea9952dfc0800000000000000
+      internalID: -3471613840984366763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 10
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edcef01d68294bb80800000000000000
+      internalID: -8379911898898895650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 9
+        width: 49
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa146d6e5b55f2080800000000000000
+      internalID: -9210048473199132246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_11
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 104
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f0bc44fcc4040b0800000000000000
+      internalID: -5746508671428653203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_12
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 6
+        width: 38
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f3c085154a650d0800000000000000
+      internalID: -3434376996546920547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_13
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 8
+        width: 36
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da9db71d1dd26740800000000000000
+      internalID: 5143916841432619728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_14
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 10
+        width: 43
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5bb5cfe92d7eed0800000000000000
+      internalID: -2384705897388853789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_15
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 10
+        width: 48
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40386236c89f348e0800000000000000
+      internalID: -1710249052116450556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_16
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 6
+        width: 40
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63599b166c0f7d70800000000000000
+      internalID: 9042960209472476010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheIndieStoneLogo_Lineart_White_17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 13
+        width: 15
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd2aeea631345d90800000000000000
+      internalID: -7110003800778592821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TheIndieStoneLogo_Lineart_White_0: -7753668960813143187
+      TheIndieStoneLogo_Lineart_White_1: -8105133323466434472
+      TheIndieStoneLogo_Lineart_White_10: -9210048473199132246
+      TheIndieStoneLogo_Lineart_White_11: -5746508671428653203
+      TheIndieStoneLogo_Lineart_White_12: -3434376996546920547
+      TheIndieStoneLogo_Lineart_White_13: 5143916841432619728
+      TheIndieStoneLogo_Lineart_White_14: -2384705897388853789
+      TheIndieStoneLogo_Lineart_White_15: -1710249052116450556
+      TheIndieStoneLogo_Lineart_White_16: 9042960209472476010
+      TheIndieStoneLogo_Lineart_White_17: -7110003800778592821
+      TheIndieStoneLogo_Lineart_White_2: -1308111266059405976
+      TheIndieStoneLogo_Lineart_White_3: 2628798961921774229
+      TheIndieStoneLogo_Lineart_White_4: -4077023306546705144
+      TheIndieStoneLogo_Lineart_White_5: 4238598822398177915
+      TheIndieStoneLogo_Lineart_White_6: 6077561360130896380
+      TheIndieStoneLogo_Lineart_White_7: -3875847852658379064
+      TheIndieStoneLogo_Lineart_White_8: -3471613840984366763
+      TheIndieStoneLogo_Lineart_White_9: -8379911898898895650
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
