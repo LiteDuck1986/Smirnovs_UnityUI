@@ -51,6 +51,9 @@ public class CharacterCreatorManager : MonoBehaviour
     public TMP_Dropdown necklaceDropdown;
     public TMP_Dropdown voiceDropdown;
 
+    public Transform bloodPanel; // blood overlay
+    public Transform bandagePanel; // bandage overlay
+
     [Header("Voice Settings")]
     public AudioSource voiceSource;
     public AudioClip[] maleVoices;
@@ -436,5 +439,20 @@ public class CharacterCreatorManager : MonoBehaviour
         voiceDropdown.value = 0;
         voiceDropdown.RefreshShownValue();
         OnVoiceDropdownChanged(0); 
+    }
+
+    public void ClearAllDecals()
+    {
+        foreach (Transform child in bloodPanel)
+        {
+            // Iznīcina child objects
+            Destroy(child.gameObject);
+        }
+
+        foreach (Transform child in bandagePanel)
+        {
+            // Iznīcina child objects
+            Destroy(child.gameObject);
+        }
     }
 }
