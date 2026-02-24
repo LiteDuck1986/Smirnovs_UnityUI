@@ -25,6 +25,7 @@ public class CharacterCreatorManager : MonoBehaviour
     [Header("UI Elements to Reset")]
     public TMP_Dropdown genderDropdown;
     public TMP_Dropdown hatDropdown;
+    public TMP_Dropdown voiceDropdown;
 
     [Header("Voice Settings")]
     public AudioSource voiceSource;
@@ -38,6 +39,8 @@ public class CharacterCreatorManager : MonoBehaviour
     void Start()
     {
         UpdateAboutText();
+
+        UpdateVoiceDropdownOptions();
 
         if (maleVoices.Length > 0)
         {
@@ -77,6 +80,9 @@ public class CharacterCreatorManager : MonoBehaviour
         DisableAllClothing(femaleHats);
 
         UpdateAboutText();
+
+        // Atjauno Dropdown opcijas
+        UpdateVoiceDropdownOptions();
     }
 
     // DRĒBES
@@ -182,5 +188,37 @@ public class CharacterCreatorManager : MonoBehaviour
 
         // Atjaunina text
         aboutText.text = "Name: " + finalForename + " " + finalSurname + "\nBorn: " + finalYear;
+    }
+
+    private void UpdateVoiceDropdownOptions()
+    {
+        // Izstīra dropdown opcijas.
+        voiceDropdown.ClearOptions();
+
+        // String list priekš jaunajiem dropdown items, mainot dzimumu
+        List<string> newVoiceNames = new List<string>();
+
+        // Pārbaude
+        if (isMale)
+        {
+            foreach (AudioClip clip in maleVoices)
+            {
+                newVoiceNames.Add(clip.name);
+            }
+        }
+        else
+        {
+            foreach (AudioClip clip in femaleVoices)
+            {
+                newVoiceNames.Add(clip.name);
+            }
+        }
+
+        // Atjauno dropdown UI
+        voiceDropdown.AddOptions(newVoiceNames);
+
+        voiceDropdown.value = 0;
+        voiceDropdown.RefreshShownValue();
+        OnVoiceDropdownChanged(0); 
     }
 }

@@ -3038,7 +3038,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &310131569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3235,7 +3235,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &328632602
 GameObject:
   m_ObjectHideFlags: 0
@@ -5940,7 +5940,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &564125382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,7 +6037,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &583814331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6368,7 +6368,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &605213126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11122,6 +11122,7 @@ MonoBehaviour:
   - {fileID: 889406644}
   genderDropdown: {fileID: 1757434137}
   hatDropdown: {fileID: 1203283091}
+  voiceDropdown: {fileID: 757270567}
   voiceSource: {fileID: 1106966662}
   maleVoices:
   - {fileID: 8300000, guid: 8276c5578e69a124d97a770754e461f9, type: 3}
@@ -11141,8 +11142,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5815594555390998902, guid: f8e2e5630fd82754782813f9549b33aa, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8276c5578e69a124d97a770754e461f9, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8276c5578e69a124d97a770754e461f9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13470,7 +13471,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &1413605025
 GameObject:
   m_ObjectHideFlags: 0
@@ -16832,7 +16833,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &1739689621
 GameObject:
   m_ObjectHideFlags: 0
@@ -18849,7 +18850,7 @@ MonoBehaviour:
   m_CellSize: {x: 350, y: 20}
   m_Spacing: {x: 0, y: 2}
   m_Constraint: 2
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!1 &1942433545
 GameObject:
   m_ObjectHideFlags: 0
