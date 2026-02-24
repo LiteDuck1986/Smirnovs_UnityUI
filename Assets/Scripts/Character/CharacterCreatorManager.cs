@@ -26,12 +26,23 @@ public class CharacterCreatorManager : MonoBehaviour
     public TMP_Dropdown genderDropdown;
     public TMP_Dropdown hatDropdown;
 
+    [Header("Voice Settings")]
+    public AudioSource voiceSource;
+    public AudioClip[] maleVoices;
+    public AudioClip[] femaleVoices;
+    public Slider pitchSlider;
+
     private bool isMale = true;
     private bool isFemale = false;
 
     void Start()
     {
         UpdateAboutText();
+
+        if (maleVoices.Length > 0)
+        {
+            voiceSource.clip = maleVoices[0];
+        }
     }
 
     // Metode kas reseto visu, ja nomaina dzimumu
@@ -48,6 +59,8 @@ public class CharacterCreatorManager : MonoBehaviour
             isMale = false;
             isFemale = true;
         }
+
+        OnVoiceDropdownChanged(0);
 
         // Dzimumi
         maleModel.SetActive(isMale);
@@ -99,6 +112,37 @@ public class CharacterCreatorManager : MonoBehaviour
             if (item != null) item.SetActive(false);
         }
     }
+
+    // Tēla balss metodes
+    public void PlayVoicePreview()
+    {
+        // Pitch
+        voiceSource.pitch = pitchSlider.value;
+        voiceSource.Play();
+    }
+
+    // Metode ko izsauc dropdown, kad index tiek mainīts
+    public void OnVoiceDropdownChanged(int index)
+    {
+        AudioClip[] currentVoiceList = maleVoices;
+
+        // Pārbaude
+        if (isMale)
+        {
+            currentVoiceList = maleVoices;
+        }
+
+        if (!isMale)
+        {
+            currentVoiceList = femaleVoices;
+        }
+
+        if (index >= 0 && index < currentVoiceList.Length)
+        {
+            voiceSource.clip = currentVoiceList[index];
+        }
+    }
+
 
     // About Text (OUTPUT)
     public void UpdateAboutText()
