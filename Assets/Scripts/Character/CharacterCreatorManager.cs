@@ -18,13 +18,37 @@ public class CharacterCreatorManager : MonoBehaviour
     public TextMeshProUGUI aboutText;
 
     [Header("Clothing Categories")]
+    // Vīriešu kategorijas
     public GameObject[] maleHats;
+    public GameObject[] maleVests;
+    public GameObject[] maleShirts;
+    public GameObject[] maleTshirts;
+    public GameObject[] malePants;
+    public GameObject[] maleSocks;
+    public GameObject[] maleShoes;
+    public GameObject[] maleNecklace;
+
+    // Sieviešu kategorijas
     public GameObject[] femaleHats;
-    // Vēlāk pieliksu citas drēbes priekš sievietes un vīrieša..
+    public GameObject[] femaleVests;
+    public GameObject[] femaleShirts;
+    public GameObject[] femaleTshirts;
+    public GameObject[] femalePants;
+    public GameObject[] femaleSocks;
+    public GameObject[] femaleShoes;
+    public GameObject[] femaleNecklace;
+
 
     [Header("UI Elements to Reset")]
     public TMP_Dropdown genderDropdown;
     public TMP_Dropdown hatDropdown;
+    public TMP_Dropdown vestDropdown;
+    public TMP_Dropdown shirtDropdown;
+    public TMP_Dropdown tShirtDropdown;
+    public TMP_Dropdown pantsDropdown;
+    public TMP_Dropdown socksDropdown;
+    public TMP_Dropdown shoesDropdown;
+    public TMP_Dropdown necklaceDropdown;
     public TMP_Dropdown voiceDropdown;
 
     [Header("Voice Settings")]
@@ -73,11 +97,35 @@ public class CharacterCreatorManager : MonoBehaviour
         forenameInput.text = "";
         surnameInput.text = "";
         YearInput.text = "";
+
+        // Dropdown values
         hatDropdown.value = 0; // dropdown index 0
+        vestDropdown.value = 0; // dropdown index 0
+        shirtDropdown.value = 0; // dropdown index 0
+        tShirtDropdown.value = 0; // dropdown index 0
+        pantsDropdown.value = 0; // dropdown index 0
+        socksDropdown.value = 0; // dropdown index 0
+        shoesDropdown.value = 0; // dropdown index 0
+        necklaceDropdown.value = 0; // dropdown index 0
 
         // Islēdz visas drēbes
         DisableAllClothing(maleHats);
+        DisableAllClothing(maleVests);
+        DisableAllClothing(maleShirts);
+        DisableAllClothing(maleTshirts);
+        DisableAllClothing(malePants);
+        DisableAllClothing(maleSocks);
+        DisableAllClothing(maleShoes);
+        DisableAllClothing(maleNecklace);
+
         DisableAllClothing(femaleHats);
+        DisableAllClothing(femaleVests);
+        DisableAllClothing(femaleShirts);
+        DisableAllClothing(femaleTshirts);
+        DisableAllClothing(femalePants);
+        DisableAllClothing(femaleSocks);
+        DisableAllClothing(femaleShoes);
+        DisableAllClothing(femaleNecklace);
 
         UpdateAboutText();
 
@@ -85,7 +133,7 @@ public class CharacterCreatorManager : MonoBehaviour
         UpdateVoiceDropdownOptions();
     }
 
-    // DRĒBES
+    // DRĒBES Metodes
     public void OnHatChanged(int index)
     {
         GameObject[] currentHatList = maleHats;
@@ -107,6 +155,174 @@ public class CharacterCreatorManager : MonoBehaviour
         if (index > 0 && index <= currentHatList.Length)
         {
             currentHatList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnVestChanged(int index)
+    {
+        GameObject[] currentVestList = maleVests;
+
+        if (isMale)
+        {
+            currentVestList = maleVests;
+        }
+
+        if (!isMale)
+        {
+            currentVestList = femaleVests;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentVestList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentVestList.Length)
+        {
+            currentVestList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnShirtChanged(int index)
+    {
+        GameObject[] currentShirtList = maleShirts;
+
+        if (isMale)
+        {
+            currentShirtList = maleShirts;
+        }
+
+        if (!isMale)
+        {
+            currentShirtList = femaleShirts;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentShirtList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentShirtList.Length)
+        {
+            currentShirtList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnTshirtChanged(int index)
+    {
+        GameObject[] currentTshirtList = maleTshirts;
+
+        if (isMale)
+        {
+            currentTshirtList = maleTshirts;
+        }
+
+        if (!isMale)
+        {
+            currentTshirtList = femaleTshirts;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentTshirtList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentTshirtList.Length)
+        {
+            currentTshirtList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnPantsChanged(int index)
+    {
+        GameObject[] currentPantsList = malePants;
+
+        if (isMale)
+        {
+            currentPantsList = malePants;
+        }
+
+        if (!isMale)
+        {
+            currentPantsList = femalePants;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentPantsList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentPantsList.Length)
+        {
+            currentPantsList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnSocksChanged(int index)
+    {
+        GameObject[] currentSocksList = maleSocks;
+
+        if (isMale)
+        {
+            currentSocksList = maleSocks;
+        }
+
+        if (!isMale)
+        {
+            currentSocksList = femaleSocks;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentSocksList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentSocksList.Length)
+        {
+            currentSocksList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnShoesChanged(int index)
+    {
+        GameObject[] currentShoesList = maleShoes;
+
+        if (isMale)
+        {
+            currentShoesList = maleShoes;
+        }
+
+        if (!isMale)
+        {
+            currentShoesList = femaleShoes;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentShoesList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentShoesList.Length)
+        {
+            currentShoesList[index - 1].SetActive(true);
+        }
+    }
+
+    public void OnNecklaceChanged(int index)
+    {
+        GameObject[] currentNecklaceList = maleNecklace;
+
+        if (isMale)
+        {
+            currentNecklaceList = maleNecklace;
+        }
+
+        if (!isMale)
+        {
+            currentNecklaceList = femaleNecklace;
+        }
+
+        // Islēdz visas cepures
+        DisableAllClothing(currentNecklaceList);
+
+        // Ja index > 0, tad ieslēdz izvēlēto cepuri (index - 1, jo 0 ir "None")
+        if (index > 0 && index <= currentNecklaceList.Length)
+        {
+            currentNecklaceList[index - 1].SetActive(true);
         }
     }
 
