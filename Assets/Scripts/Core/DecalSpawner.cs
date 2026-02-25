@@ -13,7 +13,11 @@ public class DecalSpawner : MonoBehaviour, IPointerDownHandler
         // Max 3 decals
         if (characterPanel.childCount >= 3) return;
 
-        AudioManager.Instance.PlayClick();
+        // Pārbaude, lai nav errors un spēle sfx
+        if (AudioManager.Instance != null) 
+        {
+            AudioManager.Instance.PlayClick();
+        }
 
         // Spawno decal
         GameObject newDecal = Instantiate(decalPrefab[currentIndex], characterPanel);

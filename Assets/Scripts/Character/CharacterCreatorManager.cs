@@ -54,6 +54,10 @@ public class CharacterCreatorManager : MonoBehaviour
     public Transform bloodPanel; // blood overlay
     public Transform bandagePanel; // bandage overlay
 
+    [Header("Decal Layers")]
+    public GameObject bloodOverlay; // GameObjects
+    public GameObject bandageOverlay;  // GameObjects
+
     [Header("Voice Settings")]
     public AudioSource voiceSource;
     public AudioClip[] maleVoices;
@@ -69,6 +73,10 @@ public class CharacterCreatorManager : MonoBehaviour
 
     private bool isMale = true;
     private bool isFemale = false;
+
+    [Header("UI Toggles")]
+    public Toggle bloodToggle;
+    public Toggle bandageToggle;
 
     void Start()
     {
@@ -148,6 +156,19 @@ public class CharacterCreatorManager : MonoBehaviour
 
         // Izstīra visus decals
         ClearAllDecals();
+
+        ToggleBloodVisibility(true);
+        ToggleBandageVisibility(true);
+
+        // Reseto toggle
+        if (bloodToggle != null)
+        {
+            bloodToggle.isOn = true;
+        }
+        if (bandageToggle != null)
+        {
+            bandageToggle.isOn = true;
+        }
 
         UpdateAboutText();
 
@@ -505,5 +526,26 @@ public class CharacterCreatorManager : MonoBehaviour
         {
             femaleModel.transform.localScale = newScale;
         }
-        }
+    }
+
+    // Toggle pogas
+    public void ToggleBloodVisibility(bool value)
+    {
+        if (bloodOverlay != null) 
+        bloodOverlay.SetActive(value);
+
+        // Click SFX
+        if (AudioManager.Instance != null)
+        AudioManager.Instance.PlayClick();
+    }
+
+    public void ToggleBandageVisibility(bool value)
+    {
+        if (bandageOverlay != null) 
+        bandageOverlay.SetActive(value);
+
+        // Click SFX
+        if (AudioManager.Instance != null)
+        AudioManager.Instance.PlayClick();
+    }
 }
