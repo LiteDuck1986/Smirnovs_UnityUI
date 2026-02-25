@@ -60,6 +60,13 @@ public class CharacterCreatorManager : MonoBehaviour
     public AudioClip[] femaleVoices;
     public Slider pitchSlider;
 
+    [Header("Character Attributes")]
+    public Slider weightSlider;
+    public Slider heightSlider;
+
+    private float defaultWeight = 1f;
+    private float defaultHeight = 1f;
+
     private bool isMale = true;
     private bool isFemale = false;
 
@@ -95,6 +102,15 @@ public class CharacterCreatorManager : MonoBehaviour
         // Dzimumi
         maleModel.SetActive(isMale);
         femaleModel.SetActive(isFemale);
+
+        // Reseto Height un Weight uz default vērtībām.
+        weightSlider.value = 1f;
+        heightSlider.value = 1f;
+
+        defaultWeight = 1f;
+        defaultHeight = 1f;
+
+        ApplyBodyScale();
 
         // Input fields un Dropdown
         forenameInput.text = "";
@@ -458,4 +474,36 @@ public class CharacterCreatorManager : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
+
+    // Height un Width
+    public void ChangeWeight()
+    {
+        // X
+        defaultWeight = weightSlider.value;
+        ApplyBodyScale();
+    }
+
+    public void ChangeHeight()
+    {
+        // Y
+        defaultHeight = heightSlider.value;
+        ApplyBodyScale();
+    }
+
+    private void ApplyBodyScale()
+    {
+        Vector3 newScale = new Vector3(defaultWeight, defaultHeight, 1f);
+
+        // Vīrietis
+        if (maleModel != null)
+        {
+            maleModel.transform.localScale = newScale;
+        }
+
+        // Sieviete
+        if (femaleModel != null)
+        {
+            femaleModel.transform.localScale = newScale;
+        }
+        }
 }
