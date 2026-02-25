@@ -417,36 +417,83 @@ public class CharacterCreatorManager : MonoBehaviour
         string finalSurname;
         string finalYear;
 
-    // Pārbaudes
-        if (forenameInput.text == "") 
+        string genderTerm; // Man, Woman
+        string pronoun; // He, She
+
+        // Forename
+        if (forenameInput.text == "")
         {
-            finalForename = "Jacob";
-        }
-        else 
+            // Pārbaude
+            if (isMale == true)
+            {
+                finalForename = "Rick";
+            }
+            else
+            {
+                finalForename = "Lori";
+            }
+            forenameInput.text = finalForename;
+            }
+            else
         {
             finalForename = forenameInput.text;
         }
 
-        if (surnameInput.text == "") 
+        // Surname
+        if (surnameInput.text == "")
         {
-            finalSurname = "Jones";
+            // Pārbaude
+            if (isMale == true)
+            {
+                finalSurname = "Grimes";
+            }
+            else
+            {
+                finalSurname = "Miller";
+            }
+            surnameInput.text = finalSurname;
         }
-        else 
+        else
         {
             finalSurname = surnameInput.text;
         }
 
-        if (YearInput.text == "") 
+        // Year
+        if (YearInput.text == "")
         {
-            finalYear = "1986";
+            finalYear = "1993";
+            YearInput.text = "1993";
         }
-        else 
+        else
         {
             finalYear = YearInput.text;
         }
 
-        // Atjaunina text
-        aboutText.text = "Name: " + finalForename + " " + finalSurname + "\nBorn: " + finalYear;
+        // Izrēķina cik tēlam ir gadu
+        int birthYear = int.Parse(finalYear); // Text to int
+        int currentYear = System.DateTime.Now.Year; // Esošais gads
+        int age = currentYear - birthYear;
+
+        // Dzimuma pronouns un term
+        if (isMale == true)
+        {
+            genderTerm = "man";
+            pronoun = "He";
+        }
+        else
+        {
+            genderTerm = "woman";
+            pronoun = "She";
+        }
+
+        // About Informācija
+        string story = "Name: " + finalForename + " " + finalSurname + "\n";
+        story = story + "Age: " + age + " years old\n\n";
+        story = story + finalForename + " is a lone " + genderTerm + " in Kentucky.\n";
+        story = story + pronoun + " remembers the world before the Knox Event.\n\n";
+        story = story + "This is how " + finalForename + " died.";
+
+        aboutText.text = story;
     }
 
     private void UpdateVoiceDropdownOptions()
