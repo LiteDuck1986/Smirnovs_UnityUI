@@ -130,6 +130,9 @@ public class CharacterCreatorManager : MonoBehaviour
         DisableAllClothing(femaleShoes);
         DisableAllClothing(femaleNecklace);
 
+        // Izstīra visus decals
+        ClearAllDecals();
+
         UpdateAboutText();
 
         // Atjauno Dropdown opcijas

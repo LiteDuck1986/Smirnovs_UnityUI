@@ -3,9 +3,10 @@ using UnityEngine.EventSystems;
 
 public class DecalSpawner : MonoBehaviour, IPointerDownHandler
 {
-    public GameObject decalPrefab;
+    public GameObject[] decalPrefab;
     public Transform characterPanel; // UI Parent
     public RectTransform spawnPoint; // spawn point
+    private int currentIndex = 0;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -15,7 +16,14 @@ public class DecalSpawner : MonoBehaviour, IPointerDownHandler
         AudioManager.Instance.PlayClick();
 
         // Spawno decal
-        GameObject newDecal = Instantiate(decalPrefab, characterPanel);
+        GameObject newDecal = Instantiate(decalPrefab[currentIndex], characterPanel);
+
+        currentIndex++;
+
+        if (currentIndex == decalPrefab.Length)
+        {
+            currentIndex = 0; // RESET
+        }
 
         RectTransform decalRect = newDecal.GetComponent<RectTransform>();
         decalRect.anchoredPosition = spawnPoint.anchoredPosition;
