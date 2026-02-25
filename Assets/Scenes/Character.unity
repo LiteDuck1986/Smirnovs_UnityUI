@@ -714,7 +714,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.63529414, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2121,7 +2121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -114.5, y: -239.79999}
+  m_AnchoredPosition: {x: -114.5, y: -239.9}
   m_SizeDelta: {x: 125, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163095018
@@ -6286,8 +6286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.593}
-  m_SizeDelta: {x: 433.6528, y: 101.0003}
+  m_AnchoredPosition: {x: 0, y: -0.1078}
+  m_SizeDelta: {x: 328.073, y: 115.4825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526455490
 MonoBehaviour:
@@ -6309,14 +6309,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click on a decal you want, it will spawn on the character then drag around
-    the decal, where ever you wish.
+  m_text: 'Click a decal to spawn it on your character.
 
-    Toggle elements, change the visibility of
-    the decals.
+    Drag it to position
+    wherever you like.
 
 
-    Right click to *REMOVE* a decal.'
+    Use Toggle Elements to show or hide decals.
+
+
+    Right-click
+    to REMOVE a decal.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0115645c8e8e4441ad5499fda04d232, type: 2}
   m_sharedMaterial: {fileID: -6103184529281090038, guid: f0115645c8e8e4441ad5499fda04d232, type: 2}
@@ -6460,7 +6463,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.16078432, g: 0.6509804, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -11665,7 +11668,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.16078432, g: 0.6509804, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -14902,7 +14905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -355.30005, y: -148.1}
+  m_AnchoredPosition: {x: -355.30005, y: -134.48926}
   m_SizeDelta: {x: 250, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198889422
@@ -21452,8 +21455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53.450317, y: -203.40097}
-  m_SizeDelta: {x: 461.0854, y: 120.8019}
+  m_AnchoredPosition: {x: -2.2285, y: -198.9}
+  m_SizeDelta: {x: 349.7278, y: 139.0214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768897030
 MonoBehaviour:
