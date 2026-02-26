@@ -30,23 +30,25 @@ Projekta izstrādes process tiek izsekojams versijās ar Git versiju kontroles s
 Projekts ir izstrādāts noteiktajā termiņā, tā izstrāde ir veikta rūpīgi un tas ir darbināms bez funkcionālām nepilnībām (2p)
 
 ---
+<h2 align="left">Ekrānšāviņi</h2>
 
-## Ekrānšāviņi
-*Galvenā izvelne*
+<h3 align="center">Galvenā izvēlne un iestatījumi</h3>
 
-![Galvenā izvēlne](docs/mainmenu.png)
-![Iestatījumi](docs/settings.png)
-![Quit panelis](docs/quit.png)
+| Galvenā izvēlne | Iestatījumi | Iziešanas logs |
+| :---: | :---: | :---: |
+| ![Galvenā izvēlne](docs/mainmenu.png) | ![Iestatījumi](docs/settings.png) | ![Quit panelis](docs/quit.png) |
 
-*Tēla izveides aina*
+<h3 align="center">Tēla izveides aina</h3>
 
 ![Tēlu aina](docs/characterScene.png)
-![Dati](docs/data.png)
-![Balss kategorija](docs/voice.png)
-![Informācija](docs/about.png)
-![Tēls](docs/character.png)
-![Drēbes](docs/clothing.png)
-![Decals](docs/decals.png)
+
+<h3 align="center">Tēla skats</h3>
+
+| Tēla priekšskatījums | Tēls vīrietis | Tēls sieviete |
+| :---: | :---: | :---: |
+| ![Tēls](docs/character.png) | ![Informācija](docs/guy1.png) | ![Decals](docs/girl1.png) |
+
+> **Piezīme:** Visi apģērbu asseti ir pieejami docs mapē.
 
 ---
 
@@ -57,6 +59,9 @@ Projekts ir izstrādāts noteiktajā termiņā, tā izstrāde ir veikta rūpīgi
 - **Velc un nomet brūces:** Velc asins šļakatas un pārsējus tieši uz tēla.
 - **Pārvietojamas uzlīmes:** Pēc novietošanas uzlīmes var pārvietot vai noņemt ar labo peles klikšķi.
 
+### UI Dizains
+
+- **UI:** Ir iegūldīts laiks priekš ši projekta UI dizaina.
 ---
 
 ## Autori un pateicības
